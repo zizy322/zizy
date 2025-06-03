@@ -1,7 +1,7 @@
 #!/bin/bash
 csv_file="/opt/User.csv"
-while IFS=";" read -r firstName role phone ou street zip city country password; do
-	if [ "$FirstName" == "First Name" ]; then
+while IFS=";" read -r firstName lastName role phone ou street zip city country password; do
+	if [ "firstName" == "First Name" ]; then
 		continue
 	fi
 	username="${firstName,,}.${lastName,,}"
